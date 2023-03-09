@@ -1,0 +1,187 @@
+
+h1{
+    letter-spacing: 2px;
+    color:#FF6B00;
+};
+
+.fw-700{
+   font-family: 'Noto Sans TC', sans-serif; 
+   font-weight:900;
+}
+
+.orange-color{
+    color:#FF6B00;
+     
+ }
+
+.yellow-color{
+   color : #FFC80A;
+     
+ }
+
+.blue-color{
+    color:#1A1E61;
+     
+ }
+
+ .o-color{
+   color:#FF6B00;
+ }
+ .color-666{
+   color: #333333;
+ }
+ .color-AAA{
+      color:#AAAAAA;
+ }
+
+ .letter2{
+    letter-spacing: 2px;
+
+ }
+
+ .btn-outline-warning{
+    color:#FF6B00;
+    letter-spacing: 2px;
+    font-size: 16px;
+    border:1px solid #FF6B00;
+    border-radius: 25px;
+ }
+
+ .btn-outline-white{
+   color:white;
+   letter-spacing: 2px;
+   font-size: 16px;
+   border:1px solid white;
+   border-radius: 25px;
+}
+
+
+
+
+
+
+ .bg-yellow{
+    background-color : #FFC80A;
+    width: 100%;
+    height: 60px;
+ }
+
+ 
+
+ .text-info{
+    color: #333333!important;
+
+ }
+
+.navbar-nav .nav-link {
+    color: #333333;
+    margin-left: 1rem;
+    margin-right:1rem ;
+    letter-spacing: 0.1rem;
+ }
+
+.navbar-nav .nav-link:hover{
+    color:#FF6B00;
+
+ }
+ .frame {  
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+.h5{
+   line-height: 1.5;
+}
+.banner {  
+   max-height: 100%;  
+   max-width: 100%; 
+   width: auto;
+   height: auto;
+   position: absolute;  
+   top: -5px;  
+   bottom: 0;  
+   left: 0;  
+   right: 0;  
+   margin: auto;
+}
+
+.bg-orange{
+ background-color: #FF6B00;
+
+}
+
+.bg-yellow2{
+   background-color : #FFC80A;
+   width: 100%;
+   
+}
+
+.bg-yellow3{
+   background-color : #ff9f00;
+   width: 100%;
+   
+}
+.me-n5 {
+   margin-right: -5rem !important;
+   
+}
+.border-gray{
+    border: 2px solid #E3E3E3;   
+}
+
+.border-orange{
+    border: 2px solid #FF6B00;   
+}
+
+.scalefood{
+    transform:scale(1.2,1.2);
+    transition: all 0.5s;
+}
+
+
+.top-2{
+   display:none;
+}
+
+.top-3{
+   display:none;
+}
+
+.footer-color{
+   background: #333333!important
+}
+
+/* .ml11 {
+   font-weight: 700;
+   font-size: 3.5em;
+ }
+ 
+ .ml11 .text-wrapper {
+   position: relative;
+   display: inline-block;
+   padding-top: 0.1em;
+   padding-right: 0.05em;
+   padding-bottom: 0.15em;
+ }
+ 
+ .ml11 .line {
+   opacity: 0;
+   position: absolute;
+   left: 0;
+   height:85%;
+   width: 3px;
+   background-color: #fddbc3;
+   transform-origin: 0% 100%;
+ }
+ 
+ .ml11 .line1 { 
+   top: 0; 
+   left: 0;
+ }
+ 
+ .ml11 .letter {
+   display: inline-block;
+   line-height: 1em;
+ } */

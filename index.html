@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>懶的想早餐</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" media="screen" href="./css/theme.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script type="text/javascript" src="./anime.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+
+
+
+
+
+</head>
+<style>
+    body {
+        background: #F8F8F8;
+        font-family: 'Noto Sans TC', sans-serif;
+        font-weight: 400;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .fw-700 {
+        font-family: 'Noto Sans TC', sans-serif;
+        font-weight: 700;
+
+    }
+
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+</style>
+
+
+<body>
+
+
+
+    <header class=" shadow-sm navbar bg-yellow navbar-expand-lg fixed-top Regular">
+        <div class="container bg-yellow  "><a class="navbar-brand pe-sm-5 ps-sm-5" href="index.html"><span
+                    class="text-primary flex-shrink-0 me-2">
+                    <a class="position-absolute top-0 d-none d-lg-block mt-sm-o" href="#"> <img height="100px"
+                            src="img/logo.png" alt="" /></a></span>
+                <a class="d-lg-none" href="#"> <img src="./img/未命名-1.png" alt="" /></a>
+                <div class="nav align-items-center order-lg-3 ms-n1 me-3   ">
+
+                    <a class="nav-link fs-4 p-2 mx-sm-1" href="#searchModal" data-bs-toggle="modal"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                            class="bi bi-search" viewBox="0 0 16 16">
+                            <path
+                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                        </svg></a>
+                    <a class="nav-link fs-4 p-2 mx-sm-1 " href="account-signin.html" data-bs-toggle="modal"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor"
+                            class="bi bi-person" viewBox="0 0 16 16">
+                            <path
+                                d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z" />
+                        </svg></a>
+                    <a class="nav-link position-relative fs-4 p-2" href="#cartOffcanvas" data-bs-toggle="offcanvas"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                            class="bi bi-cart3" viewBox="0 0 16 16">
+                            <path
+                                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                        </svg></i>
+                        <span class="badge bg-orange fs-xs position-absolute end-0 top-0 me-n1"
+                            style="padding: .25rem .375rem;">3</span></a>
+                </div>
+                <button class="navbar-toggler ms-sm-3" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button>
+                <nav class="collapse navbar-collapse ms-5 ps-5 me-sm-1" id="navbarNav">
+                    <ul class="navbar-nav navbar-nav-scroll " style="--ar-scroll-height: 520px;">
+                        <li class="nav-item"><a class="nav-link" href="#" style="font-weight: 600">懶的等線上點餐</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="components/typography.html"
+                                style="font-weight:600">關於我們</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="docs/getting-started.html"
+                                style="font-weight: 600">最新消息</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="docs/getting-started.html"
+                                style="font-weight: 600">加盟資訊</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="docs/getting-started.html"
+                                style="font-weight: 600">電話訂餐</a>
+                        </li>
+                    </ul>
+                </nav>
+        </div>
+    </header>
+
+    <div class="containner">
+        <section>
+            <div class="container-fluid pt-5 pt-sm-0 position-relative">
+                <div class="row justify-content-center   mt-xl-3  mt-xxl-5 pb-xxl-5 text-xl-start text-center">
+                    <div class="col-10 col-xl-4 align-self-center text-xl-start text-center" data-aos="fade-right"
+                        data-aos-easing="linear" data-aos-duration="1000">
+
+
+                        <h4 class="blue-color mt-5  fw-700 letter2 ps-3">一番美味しい獨門秘醬</h4>
+                        <div class="text-nowrap d-flex align-items-center">
+                            <h1 class="fw-bold fst-italic orange-color pt-2 letter2 display-3">雙蛋! <span
+                                    class="fw-700 fst-italic blue-color ps-2 letter2 display-5 mb-0 pt-2">花生厚醬燒豚肉</span>
+                            </h1>
+                        </div>
+                        <img class="pt-3 pb-3" src="./img/Group 68.png" alt="">
+                        <p class=" h5 pt-3 letter2 text-dark" style="font-family: 400;">
+                            嚴選頂級豬肉,來自台灣雲林產銷履歷牧場，扎實彈牙的好肉質，一吃究懂的美味！ 獨家秘製醃醬豚肉，搭配銷魂濃郁花生醬，難以忘懷的美味...
+                        </p>
+                        <a href="#"
+                            class=" mt-3 mt-lg-5 mb-5 mt-sm-3 fw-bold px-5  btn  btn-lg  btn-outline-warning">線上點餐</a>
+
+
+                    </div>
+                    <div class=" col-12 mt-0 col-md-6 d-none d-lg-block ms-5 " data-aos="zoom-in-left">
+                        <img class="img-fluid ms-0 ms-xxl-5  " src="./img/橘色底.png">
+                        <div class="parallax-layer zindex-1 position-absolute" style="top:100px; left: 30px;" id="hero">
+                            <img class="img-fluid w-xxl-75 w-100" src="./img/Group 3595.png" alt="Layer">
+                        </div>
+                    </div>
+                    <div class=" col-12 mt-0 col-md-6 d-block d-lg-none " data-aos="zoom-in-left">
+                        <img class="img-fluid ms-0 ms-xxl-5  " src="./img/橘色底.png">
+                        <div class="parallax-layer zindex-1 position-absolute" style="top:30px; left: 30px;" id="hero">
+                            <img class="img-fluid w-xxl-75 w-100" src="./img/Group 3595.png" alt="Layer">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="container pt-5 mt-xl-3 mt-xxl-5">
+            <div class="row text-center ">
+                <div data-aos="fade-up" class="col">
+                    <h4 class="  blue-color fw-bold  letter2 ">懶的等Take out 3步驟</h4>
+                    <h1 class="fw-bold fst-italic orange-color pt-2 letter2 display-3">高速點餐 拿了就走!</h1>
+                    <p class="h5 pt-3 letter2 text-dark">
+                        忙碌的早晨懶的等！趕快使用預訂快取3步驟，<br>來頓方便又美味的早餐吧！<br>於預定時間現點現做，熱騰騰新鮮又美味！
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="container pt-3 pb-5 mt-xl-3 mt-xxl-5">
+            <div class="row justify-content-center">
+                <div class=" col-9 col-md-3 mb-3 mb-sm-0" data-aos="fade-right" data-aos-duration="500"
+                    data-aos-offset="300">
+                    <div class="card text-center">
+                        <div class="card-body p-5 shadow rounded-3">
+                            <img src="img/Group 279.png" alt="">
+                            <h5 class="o-color fw-bold letter2 mt-3">STEP1 <span class="blue-color small">高速點餐
+                                </span>
+                            </h5>
+                            <p class="text-dark mt-3 mb-0">進入點餐頁面<br>透過懶人快選分類<br>高速選擇餐點</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-9 col-md-3 mb-3 mb-sm-0" data-aos="fade-down" data-aos-duration="500"
+                    data-aos-delay="500" data-aos-offset="300">
+                    <div class="card text-center">
+                        <div class="card-body p-5 shadow rounded-3">
+                            <img src="img/Group 280.png" alt="">
+                            <h5 class="o-color fw-bold letter2 mt-3">STEP2 <span class="blue-color small">多元付款
+                                </span>
+                            </h5>
+                            <p class="text-dark mt-3 mb-0">選擇取餐時間<br>與付款方式(信用卡、現金<br>等電子支付)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-9 col-md-3 mb-3 mb-sm-0" data-aos="fade-left" data-aos-duration="500"
+                    data-aos-delay="700" data-aos-offset="300">
+                    <div class="card text-center">
+                        <div class="card-body p-5  shadow rounded-3 ">
+                            <img src="img/Group 18.png" alt="">
+                            <h5 class="o-color fw-bold letter2 mt-3">STEP3 <span class="blue-color small">前往取餐</span>
+                            </h5>
+                            <p class="text-dark mt-3 mb-0">取餐時間前往<br>免排隊！快速取餐！<br>拿了就走</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+
+        <section>
+            <div class="container-fluid pb-5 pt-5 mt-xl-3 mt-xxl-5">
+                <div class="row">
+                    <div class="col d-flex justify-content-between  bg-orange align-items-center pe-0  "
+                        data-aos="flip-left" data-aos-offset="500">
+                        <div class="ps-5 text-nowrap py-5">
+                            <h2 class="text-light fw-bold letter2">今天想吃鹹的</h2>
+                            <p class="text-light letter2 pt-3 fs-5">來點鹹香爆量培根<br>香煎微焦金黃表層<br>味覺視覺雙重享受</p>
+                            <a href="#" class=" mt-3 fw-bold px-5 btn btn-outline-white ">來點鹹的</a>
+                        </div>
+                        <div>
+                            <img class="img-fluid d-block  rounded " src="img/香蒜培根@2x 1-2.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col d-flex justify-content-between bg-yellow3 align-items-center pe-0 "
+                        data-aos="flip-left" data-aos-offset="500" style="background-color:#ffa000">
+                        <div class=" ps-5 text-nowrap py-5">
+                            <h2 class="text-light fw-bold letter2 ">今天想吃甜的</h2>
+                            <p class="text-light letter2 pt-3 fs-5">老饕們的最愛!香甜飽滿<br>的內餡為早晨帶來了滿<br>滿幸福洋溢！</p>
+                            <a href="#" class=" mt-3 fw-bold px-5 btn btn-outline-white ">來點甜的</a>
+                        </div>
+                        <div>
+                            <img class="img-fluid d-block   rounded " src="img/香蒜培根@2x 2.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col d-flex justify-content-between  bg-yellow2 align-items-center pe-0 "
+                        data-aos="flip-left" data-aos-offset="500" style="background-color:#ffc107">
+                        <div class="ps-5  text-nowrap">
+                            <h2 class="text-light fw-bold letter2">今天想來點喝的</h2>
+                            <p class="text-light letter2 pt-3 fs-5">錫蘭紅茶 X 印度奶茶，<br>濃厚奶香與茶香，沒有<br>理由讓人不愛上啊！</p>
+                            <a href="#" class=" mt-3 fw-bold px-5 btn btn-outline-white ">來點喝的</a>
+                        </div>
+                        <div>
+                            <img class="img-fluid d-block py-5 rounded" src="img/香蒜培根@2x 3-2.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section>
+            <div class="container">
+                <div class="row justify-content-center pt-5 mt-xl-3  mt-xxl-5 pb-xxl-5 text-xl-start text-center">
+                    <div class="col-10 col-sm-4" data-aos="fade-right" data-aos-duration="500">
+                        <h1 class=" fw-bold fst-italic orange-color pt-2 letter2 display-3">BESTSELLER <span
+                                class="yellow-color"><br>TOP.1</span></h1>
+                        <hr class="d-none d-xl-block">
+                        <h4 class="blue-color fw-bold letter2 pt-4 ">招牌國王總匯 | 爆量肉肉&起司鮮蔬</h4>
+                        <img src="./img/Group 68.png" alt="">
+                        <p class="pt-4 letter2 text-dark fs-5 pb-4">
+                            嚴選頂級豬肉,來自台灣雲林產銷履歷牧場，扎實彈牙的好肉質，一吃究懂的美味！ ，難以忘懷的美味...
+                        </p>
+                        <hr class="d-none d-xl-block">
+                        <a href="#"
+                            class="  mt-3 mt-lg-5 mb-5 mt-sm-3 fw-bold px-5  btn  btn-lg  btn-outline-warning">線上點餐</a>
+
+
+                    </div>
+                    <div class="col-10 col-sm-6 po" data-aos="fade-left" data-aos-duration="500">
+                        <a href=""> <img class="rounded position-relative" src="./img/大圓圖-2@2x.png" alt=""></a>
+                        <a href=""> <img class="rounded top-2 position-absolute left-0 top-0" src="./img/大圓圖-3.png"
+                                alt="" id="top2"> </a>
+                        <a href=""> <img class="rounded top-3 position-absolute left-0 top-0" src="./img/大圓圖-4.png"
+                                alt="" id="top3"></a>
+
+                    </div>
+                    <div class="col-sm-2 d-none d-lg-block" data-aos="fade-left" data-aos-duration="500"
+                        data-aos-delay="500">
+                        <a href="javascript:void(0)"><img class="rounded img-fluid" src="./img/Group 285.png"
+                                alt=""></a>
+                        <a href="javascript:void(0)"><img class="rounded img-fluid" src="./img/Group 286.png"
+                                id="top2-b" alt=""></a>
+                        <a href="javascript:void(0)"><img class="rounded img-fluid" src="./img/Group 287.png"
+                                id="top3-b" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container pt-5 mt-xl-3 mt-lg-5">
+                <div class="row text-center">
+                    <div data-aos="fade-up" class="col" data-aos-duration="500">
+                        <h4 class="blue-color fw-bold  letter2 ">新鮮<span class="small"> X安心<span class="small"> X
+                                </span>高品質
+                        </h4>
+                        <h1 class="fw-bold fst-italic orange-color pt-2  pb-5 letter2 display-3">安心食材 用心製作</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center pt-5 d-none d-lg-block position-relative" data-aos="fade-up" class="col"
+                data-aos-duration="500" data-aos-delay="500">
+                <img class="img-fluid rounded" src="./img/banner@2x 1.png" alt="">
+            </div>
+        </section>
+
+
+        <section>
+            <div class="container">
+                <div class="row d-flex col-10 col-xl-12 mx-auto">
+                    <div class="col-6 col-lg-2 text-center" data-aos="fade-up" data-aos-duration="200"
+                        data-aos-delay="100">
+                        <a href=""><img class="rounded img-fluid pb-3 " id="food1" src="./img/food-1.png" alt=""></a>
+                        <div class="border-gray" id="food1-line"></div>
+                        <h4 class="blue-color fw-bold  letter2 pt-3 ">布里歐吐司</h4>
+                        <p class="letter2 text-dark ">
+                            法式經典奶油吐司<br><span id="addorange">堅持不加一滴水<br>添加大量牛奶與蛋液<br></span>酥脆焦香外皮搭上<br>雲朵般鬆軟口感
+                        </p>
+                    </div>
+                    <div class="col-6 col-lg-2 text-center" data-aos="fade-up" data-aos-duration="200"
+                        data-aos-delay="150">
+                        <a href=""><img class="rounded img-fluid pb-3" id="food2" src="./img/food-2.png" alt=""></a>
+                        <div class="border-gray" id="food2-line"></div>
+                        <h4 class="blue-color fw-bold  letter2 pt-3 ">友善放牧蛋</h4>
+                        <p class="letter2 text-dark ">
+                            母雞健康快樂才能產下天然營養的蛋<br>牧場新鮮直送放牧蛋<br><span id="addorange2">無藥殘留、無腥味，天然濃郁蛋香。</span>
+                        </p>
+                    </div>
+                    <div class="col-6 col-lg-2 text-center" data-aos="fade-up" data-aos-duration="200"
+                        data-aos-delay="200">
+                        <a href=""><img class="rounded img-fluid pb-3 sca" id="food3" src="./img/food-3.png" alt=""></a>
+                        <div class="border-gray" id="food3-line"></div>
+                        <h4 class="blue-color fw-bold  letter2 pt-3 ">胡桃木燻培根</h4>
+                        <p class="letter2 text-dark ">
+                            採用天然胡桃木燻材<br>濃厚煙燻風味<br><span id="addorange3">絕無添加防腐劑<br>導入高壓(HPP)技術<br>保留食材色澤及營養</span>
+                        </p>
+                    </div>
+                    <div class="col-6 col-lg-2 text-center" data-aos="fade-up" data-aos-duration="200"
+                        data-aos-delay="250">
+                        <a href=""><img class="rounded img-fluid pb-3" id="food4" src="./img/food-4.png" alt=""></a>
+                        <div class="border-gray" id="food4-line"></div>
+                        <h4 class="blue-color fw-bold  letter2 pt-3 ">小農牛番茄</h4>
+                        <p class="letter2 text-dark ">
+                            嘉義梅山小農種植<br><span id="addorange4">榮獲全國十大神農獎<br>通過吉園圃認證<br>健康安心蔬果</span><br>皮薄豐滿有機牛番茄
+                        </p>
+                    </div>
+                    <div class="col-6 col-lg-2 text-center" data-aos="fade-up" data-aos-duration="200"
+                        data-aos-delay="300">
+                        <a href=""><img class="rounded img-fluid pb-3" id="food5" src="./img/food-5.png" alt=""></a>
+                        <div class="border-gray" id="food5-line"></div>
+                        <h4 class="blue-color fw-bold  letter2 pt-3 ">蘿蔓萵苣</h4>
+                        <p class="letter2 text-dark ">
+                            嚴選生菜第一品牌<br>NICE GREEn美蔬菜<br><span id="addorange5">室內智慧農場所出產的高品質安全蔬菜<br>無塵、無蟲、無農藥</span>
+                        </p>
+                    </div>
+                    <div class="col-6 col-lg-2 text-center" data-aos="fade-up" data-aos-duration="200"
+                        data-aos-delay="350">
+                        <a href=""><img class="rounded img-fluid pb-3" id="food6" src="./img/food-6.png" alt=""></a>
+                        <div class="border-gray" id="food6-line"></div>
+                        <h4 class="blue-color fw-bold  letter2 pt-3 ">英國切達起司</h4>
+                        <p class="letter2 text-dark ">
+                            英國Snowdonia4<br>24個月熟成切達起司<br><span id="addorange6">濕度與氣溫講究製成<br>飽滿柔滑
+                                鹹香奶味<br></span>獨特威士忌尾韻香氣
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container pt-5 mt-xl-3 mt-xxl-5">
+                <div class="row owl-3 owl-carousel owl-theme ">
+
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="d-flex overflow-hidden">
+                                <div class="w-50">
+                                    <img class="img-fluid " src="./img/Ellipse 10.png" alt="">
+                                </div>
+                                <div class="ps-3 ">
+                                    <div class="d-flex align-items-center pb-3">
+                                        <h5 class="card-title mb-0 me-3">Raom</h5>
+                                        <img class="me-3 img-fluid" style="object-fit: none" src="./img/people_star.png"
+                                            alt="">
+                                    </div>
+                                    <h6 class="card-subtitle mb-2 text-muted color-AAA">在地嚮導 · 403 則評論</h6>
+                                    <hr>
+                                    <p class="card-text mt-3">邪惡好吃的奶油肉蛋吐司，懶的想也不用多想全都好好吃，餐點選擇多樣。每天都想吃不同口味
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="d-flex overflow-hidden">
+                                <div class="w-50">
+                                    <img class="img-fluid " src="./img/Ellipse 11.png" alt="">
+                                </div>
+                                <div class="ps-3 ">
+                                    <div class="d-flex align-items-center pb-3">
+                                        <h5 class="card-title mb-0 me-3">LuLu</h5>
+                                        <img class="me-3 img-fluid" style="object-fit: none" src="./img/people_star.png"
+                                            alt="">
+                                    </div>
+                                    <h6 class="card-subtitle mb-2 text-muted color-AAA">在地嚮導 · 33 則評論</h6>
+                                    <hr>
+                                    <p class="card-text mt-3">吐司真的好好吃唷，超級推推，而且老闆人超好的，店面小小的貓咪很可愛！黃澄澄的非常好認!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="d-flex overflow-hidden">
+                                <div class="w-50">
+                                    <img class="img-fluid " src="./img/Ellipse 12.png" alt="">
+                                </div>
+                                <div class="ps-3 ">
+                                    <div class="d-flex align-items-center pb-3">
+                                        <h5 class="card-title mb-0 me-3">Huang</h5>
+                                        <img class="me-3 img-fluid" style="object-fit: none" src="./img/people_star.png"
+                                            alt="">
+                                    </div>
+                                    <h6 class="card-subtitle mb-2 text-muted color-AAA">在地嚮導 · 78 則評論</h6>
+                                    <hr>
+                                    <p class="card-text mt-3">名符其實的料多味美，肉量是一般早餐店沒得比的，真的是塞滿滿，cp值超高！
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="d-flex overflow-hidden">
+                                <div class="w-50">
+                                    <img class="img-fluid " src="./img/Ellipse 13.png" alt="">
+                                </div>
+                                <div class="ps-3 ">
+                                    <div class="d-flex align-items-center pb-3 ">
+                                        <h5 class="card-title mb-0 me-3 ">Hush</h5>
+                                        <img class="me-3 img-fluid" style="object-fit: none" src="./img/people_star.png"
+                                            alt="">
+                                    </div>
+                                    <h6 class="card-subtitle mb-2 text-muted color-AAA">在地嚮導 · 23 則評論</h6>
+                                    <hr>
+                                    <p class="card-text mt-3">軟綿綿的吐司，入口滑順的煎蛋，甜鹹剛好的玉米蛋吐司，真的太好吃了！
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="d-flex overflow-hidden">
+                                <div class="w-50">
+                                    <img class="img-fluid " src="./img/Ellipse 14.png" alt="">
+                                </div>
+                                <div class="ps-3 ">
+                                    <div class="d-flex align-items-center pb-3">
+                                        <h5 class="card-title mb-0 me-3">郭芳君（pony）</h5>
+                                        <img class="me-3 img-fluid" style="object-fit: none" src="./img/people_star.png"
+                                            alt="">
+                                    </div>
+                                    <h6 class="card-subtitle mb-2 text-muted color-AAA">在地嚮導 · 14 則評論</h6>
+                                    <hr>
+                                    <p class="card-text mt-3">老闆好認真，整個台面都超乾淨，好吃好吃（還拜託老闆讓我拍照🤣）
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="d-flex overflow-hidden">
+                                <div class="w-50">
+                                    <img class="img-fluid " src="./img/Ellipse 15.png" alt="">
+                                </div>
+                                <div class="ps-3 ">
+                                    <div class="d-flex align-items-center pb-3">
+                                        <h5 class="card-title mb-0 me-3">gggrf</h5>
+                                        <img class="me-3 img-fluid" style="object-fit: none" src="./img/people_star.png"
+                                            alt="">
+                                    </div>
+                                    <h6 class="card-subtitle mb-2 text-muted color-AAA">在地嚮導 · 246 則評論</h6>
+                                    <hr>
+                                    <p class="card-text mt-3">服務態度很好♥　料的鹹度剛好裡面放進蘿蔔片，咬起來脆脆的好好吃哦！這次吃的是花生厚醬燒豚肉$55
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="d-flex overflow-hidden">
+                                <div class="w-50">
+                                    <img class="img-fluid " src="./img/Ellipse 16.png" alt="">
+                                </div>
+                                <div class="ps-3 ">
+                                    <div class="d-flex align-items-center pb-3">
+                                        <h5 class="card-title mb-0 me-3">L.Chen</h5>
+                                        <img class="me-3 img-fluid " style="object-fit: none"
+                                            src="./img/people_star.png" alt="">
+                                    </div>
+                                    <h6 class="card-subtitle mb-2 text-muted color-AAA">在地嚮導 · 856 則評論</h6>
+                                    <hr>
+                                    <p class="card-text mt-3">#花生厚醬燒豚肉，說實在我也是滿喜歡，尤其是那個厚厚的蛋，醃過的豬肉配上花生醬真心很罪惡!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class=" container-fluid p-0 pt-5 mt-xl-3 mt-xxl-5" data-aos="fade-up" class="col"
+                data-aos-duration="500" data-aos-delay="500">
+                <div class="row owl-6 owl-carousel owl-theme">
+                    <div class="col ps-0 pe-0  ">
+                        <img class="img-fluid " src="./img/1@2x.png" alt="">
+                    </div>
+                    <div class="col ps-0 pe-0">
+                        <img class="img-fluid" src="./img/2@2x.png" alt="">
+                    </div>
+                    <div class="col ps-0 pe-0">
+                        <img class="img-fluid" src="./img/3@2x.png" alt="">
+                    </div>
+                    <div class="col ps-0 pe-0">
+                        <img class="img-fluid" src="./img/4@2x.png" alt="">
+                    </div>
+                    <div class="col ps-0 pe-0 zoom-effect-wrapper ">
+                        <img class="img-fluid zoom-effect-img" src="./img/5@2x.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer dark-mode bg-dark  py-4">
+            <div class="container pt-1 pt-sm-2 pt-md-2 pt-lg-2 pt-xl-2">
+                <div class="border-bottom text-center pb-4"><a
+                        class="navbar-brand d-inline-flex text-nav py-0 mb-3 mb-md-4" href="index.html"><img
+                            src="./img/群組 1@2x 1.png" alt=""></a>
+                    <ul class="nav justify-content-center py-1 pb-sm-2">
+                        <li class="nav-item"><a class="nav-link py-2 px-3 mx-1 etter2" href="#">懶的等線上點餐</a></li>
+                        <li class="nav-item"><a class="nav-link py-2 px-3 mx-1 letter2" href="#">關於我們</a></li>
+                        <li class="nav-item"><a class="nav-link py-2 px-3 mx-1 letter2" href="#">最新消息</a></li>
+                        <li class="nav-item"><a class="nav-link py-2 px-3 mx-1 letter2" href="#">加盟資訊</a></li>
+                        <li class="nav-item"><a class="nav-link py-2 px-3 mx-1 letter2" href="#">電話訂餐</a></li>
+                    </ul>
+                </div>
+                <div class="d-sm-flex align-items-center justify-content-between pt-4 mt-2 mt-sm-0">
+                    <div class="d-flex justify-content-center order-sm-2 mb-4 mb-sm-0"><a
+                            class="btn btn-icon btn-sm btn-secondary btn-instagram rounded-circle me-3" href="#"><img
+                                class="w-75" src="img/messenger (1).png" alt=""></a><a
+                            class="btn btn-icon btn-sm btn-secondary btn-facebook rounded-circle me-3" href="#"><img
+                                class="w-75" src="img/facebook (1).png" alt=""></a><a
+                            class="btn btn-icon btn-sm btn-secondary btn-youtube rounded-circle" href="#"><img
+                                class="w-75" src="img/youtube (1).png" alt=""></a></div>
+                    <p class="fs-sm order-sm-1 text-center mb-0"><span class="opacity-70">&copy; All rights reserved.
+                            by 懶的想早餐</span>
+                    <p class="fs-sm order-sm-1 text-center mb-0 letter2"><a href=""><span
+                                class="opacity-100">門市位址：600嘉義市東區公明路286號</span></a>
+
+                </div>
+            </div>
+        </footer>
+        <!-- Back to top button--><a class="btn-scroll-top" href="#top" data-scroll>
+            <svg viewBox="0 0 40 40" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="20" cy="20" r="19" fill="none" stroke="currentColor" stroke-width="1.5"
+                    stroke-miterlimit="10"></circle>
+            </svg><i class="ai-arrow-up"></i></a>
+
+
+
+
+
+        <!-- container的結尾  -->
+    </div>
+
+    <!-- <footer class="py-5 bg-dark text-light">
+    <ul class="list-unstyled d-flex justify-content-center">
+      <li class="p-3">
+        <a href="#" class="link-light">懶的等線上點餐</a>
+      </li>
+      <li class="p-3">
+        <a href="#" class="link-light">關於我們</a>
+      </li>
+      <li class="p-3">
+        <a href="#" class="link-light">最新消息</a>
+      </li>
+      <li class="p-3">
+        <a href="#" class="link-light">加盟資訊</a>
+      </li>
+      <li class="p-3">
+        <a href="#" class="link-light">電話訂餐</a>
+      </li>
+    </ul>
+    <ul class="list-unstyled d-flex justify-content-center">
+      <li>
+        <a class="pe-3 " href="#"><i class="fab h5 fa-facebook"></i></a>
+      </li>
+      <li>
+        <a class="pe-3 " href="#"><i class="fab h5 fa-instagram"></i></a>
+      </li>
+      <li>
+        <a class="pe-3 " href="#"><i class="fab h5 fa-twitter-square"></i></a>
+      </li>
+      <li>
+        <a class="pe-3 " href="#"><i class="fas h5 fa-envelope"></i></a>
+      </li>
+    </ul>
+    <div class="text-center mt-4">
+      <p class="small text-secondary m-0">@copyright 2099 YAYAYAYAYA</p>
+    </div>
+  </footer> -->
+
+
+
+
+
+    <script type="text/javascript" src="./js/anime.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-lpyLfhYuitXl2zRZ5Bn2fqnhNAKOAaM/0Kr9laMspuaMiZfGmfwRNFh8HlMy49eQ"
+        crossorigin="anonymous"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.9/skrollr.min.js'></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>
